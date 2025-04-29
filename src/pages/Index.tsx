@@ -10,24 +10,24 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const Index = () => {
   // Пример данных пользователя
   const user = {
-    name: "Иван Петров",
-    avatarUrl: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200",
-    status: "Живу настоящим, мечтаю о будущем",
+    name: "Иван IV Грозный",
+    avatarUrl: "https://images.unsplash.com/photo-1681149126884-c93abd8364fe?q=80&w=200&auto=format",
+    status: "Государь, Царь и Великий Князь всея Руси",
     isOnline: true,
     city: "Москва",
-    education: "МГУ им. Ломоносова",
-    birthDate: "15 марта",
-    work: "Frontend Developer в IT Corp"
+    education: "Домашнее образование при дворе",
+    birthDate: "25 августа 1530 г.",
+    work: "Царь всея Руси (1547-1584)"
   };
 
   // Пример данных фотографий
   const photos = [
-    { id: "1", url: "https://images.unsplash.com/photo-1617369120004-4fc70312c5e6?w=300&h=300&q=80", alt: "Фото 1" },
-    { id: "2", url: "https://images.unsplash.com/photo-1604537466608-109fa2f16c3b?w=300&h=300&q=80", alt: "Фото 2" },
-    { id: "3", url: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=300&h=300&q=80", alt: "Фото 3" },
-    { id: "4", url: "https://images.unsplash.com/photo-1548013146-72479768bada?w=300&h=300&q=80", alt: "Фото 4" },
-    { id: "5", url: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=300&h=300&q=80", alt: "Фото 5" },
-    { id: "6", url: "https://images.unsplash.com/photo-1563089145-599997674d42?w=300&h=300&q=80", alt: "Фото 6" }
+    { id: "1", url: "https://images.unsplash.com/photo-1610546198573-e6f3bca64dac?w=300&h=300&q=80", alt: "Успенский собор" },
+    { id: "2", url: "https://images.unsplash.com/photo-1565105336789-d5d961692f53?w=300&h=300&q=80", alt: "Кремль" },
+    { id: "3", url: "https://images.unsplash.com/photo-1512495039889-52a3b799c9bc?w=300&h=300&q=80", alt: "Москва 16 век" },
+    { id: "4", url: "https://images.unsplash.com/photo-1594393628629-5c718d3dae6d?w=300&h=300&q=80", alt: "Трон" },
+    { id: "5", url: "https://images.unsplash.com/photo-1638202993928-7d5df5f838be?w=300&h=300&q=80", alt: "Корона" },
+    { id: "6", url: "https://images.unsplash.com/photo-1590176645609-fe94ad46d94a?w=300&h=300&q=80", alt: "Собор" }
   ];
 
   // Пример постов
@@ -37,11 +37,11 @@ const Index = () => {
       author: user.name,
       avatar: user.avatarUrl,
       date: "сегодня в 15:42",
-      content: "Сегодня отличный день для новых свершений! Работаю над интересным проектом и готовлюсь к выходным.",
-      likes: 42,
-      comments: 8,
-      reposts: 3,
-      views: 256,
+      content: "Повелеваю созвать Земский собор! Надобно обсудить вопросы государевы и меры по укреплению державы нашей.",
+      likes: 1547,
+      comments: 84,
+      reposts: 30,
+      views: 2560,
       images: [photos[0].url, photos[1].url]
     },
     {
@@ -49,11 +49,11 @@ const Index = () => {
       author: user.name,
       avatar: user.avatarUrl,
       date: "вчера в 10:15",
-      content: "«Совершенство - это не когда нечего добавить, а когда нечего убрать» - Антуан де Сент-Экзюпери",
-      likes: 67,
-      comments: 12,
-      reposts: 5,
-      views: 341
+      content: "«Не тот велик, кто велик пред людьми, но тот, кто велик пред Богом в душе своей». Указ о создании стрелецкого войска подписан. Отныне безопасность государства российского будет крепче!",
+      likes: 1567,
+      comments: 126,
+      reposts: 50,
+      views: 3441
     }
   ];
 
@@ -101,28 +101,28 @@ const Index = () => {
           <TabsContent value="friends">
             <div className="bg-white p-6 rounded-lg">
               <h2 className="text-xl font-semibold mb-4">Друзья</h2>
-              <p className="text-gray-500">Здесь будет список друзей</p>
+              <p className="text-gray-500">Здесь будет список придворных и бояр</p>
             </div>
           </TabsContent>
           
           <TabsContent value="photos">
             <div className="bg-white p-6 rounded-lg">
               <h2 className="text-xl font-semibold mb-4">Фотографии</h2>
-              <p className="text-gray-500">Здесь будут все фотографии</p>
+              <p className="text-gray-500">Здесь будут царские портреты и картины</p>
             </div>
           </TabsContent>
           
           <TabsContent value="videos">
             <div className="bg-white p-6 rounded-lg">
               <h2 className="text-xl font-semibold mb-4">Видео</h2>
-              <p className="text-gray-500">Здесь будут видео</p>
+              <p className="text-gray-500">Здесь будут видеозаписи царских выступлений</p>
             </div>
           </TabsContent>
           
           <TabsContent value="music">
             <div className="bg-white p-6 rounded-lg">
               <h2 className="text-xl font-semibold mb-4">Музыка</h2>
-              <p className="text-gray-500">Здесь будет музыка</p>
+              <p className="text-gray-500">Здесь будут церковные песнопения и придворная музыка</p>
             </div>
           </TabsContent>
         </Tabs>
