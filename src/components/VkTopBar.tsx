@@ -10,7 +10,13 @@ const VkTopBar = () => {
         <div className="flex items-center justify-between h-14">
           {/* Левая часть (логотип и навигация) */}
           <div className="flex items-center space-x-4">
-            <div className="font-bold text-2xl">ВК</div>
+            <div className="flex items-center">
+              <img 
+                src="https://cdn.poehali.dev/files/349d8ff3-41b7-4b68-b97a-47fff8ebc922.png" 
+                alt="ВК логотип" 
+                className="h-8 w-8"
+              />
+            </div>
             
             <div className="hidden md:flex space-x-1">
               <Button variant="ghost" className="text-white hover:bg-[#4a76a8]">
